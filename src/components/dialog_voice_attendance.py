@@ -57,7 +57,7 @@ def voice_attendance_dialog(selected_subject_id):
                     'timestamp': current_timestamp,
                     'is_present': bool(is_present)
                 })
-            st.session_state.voice_attendance_results = (pd.Dataframe(results), attendance_to_log)
+            st.session_state.voice_attendance_results = (pd.DataFrame(results), attendance_to_log)
     
     if st.session_state.get('voice_attendance_results'):
         st.divider()
